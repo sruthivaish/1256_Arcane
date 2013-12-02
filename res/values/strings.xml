@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ArcaneActivity!</string>
+    <string name="app_name">Arcane</string>
+    <string name="signin">  <u>Sign In</u></string>
+    <string name="register">  <u>Register</u></string>
+    <string name="title">ARCANE</string>
+    <string name="forgotpsw"><u>RESET...!</u></string>
+    <string name="version">Version 1.0</string>
+    <string name="developers">Sree Dattha</string>
+    <string-array name="SecretQuestion">
+        <item >Who is your favorite hero</item>
+        <item >who is your best friend</item>
+    </string-array>
+    <string-array name="Type">
+        <item >Bank Details</item>
+        <item >Card Details</item>
+        <item >Others</item>
+    </string-array>
+    <string-array name="codes">
+        <item >QR Code</item>
+        <item >DATAMATRIX</item>
+        <item >CODE 128</item>
+    </string-array>
+
+</resources>

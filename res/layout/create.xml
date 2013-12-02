@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:paddingTop="15dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ImageButton
+            android:id="@+id/ibHome"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/homeicon" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/applogo" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Create"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ImageButton
+            android:id="@+id/ibMenu"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/appmenu" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibSearch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:src="@drawable/appsearch" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Give a name" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type : "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spnrType"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Type" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Enter Details" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:visibility="gone"
+     android:id="@+id/banklayout">
+
+    <TextView
+        android:id="@+id/enterinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Information"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     >
+    <TextView
+        android:id="@+id/txtselected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Type : BankDetails"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+   
+        
+</LinearLayout>
+ 
+
+    <TextView
+        android:id="@+id/bnkname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank name" />
+
+    <EditText
+        android:id="@+id/edtbnkname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/bnklocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location" />
+
+    <EditText
+        android:id="@+id/edlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/acno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accountnumber" />
+
+    <EditText
+        android:id="@+id/edacno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <TextView
+        android:id="@+id/chequeno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheque Booknumber" />
+
+    <EditText
+        android:id="@+id/edchequeno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <TextView
+        android:id="@+id/bnklocker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank Locker number" />
+
+    <EditText
+        android:id="@+id/edlockerno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <TextView
+        android:id="@+id/lockercode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locker code" />
+
+    <EditText
+        android:id="@+id/edcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     
+</LinearLayout>   
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:id="@+id/cardlayout" >
+
+    <TextView
+        android:id="@+id/enterinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Information"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     >
+    <TextView
+        android:id="@+id/txtselected2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Type : CardDetails"
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+   
+        
+</LinearLayout>
+ 
+
+    <TextView
+        android:id="@+id/cardname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card name" />
+
+    <EditText
+        android:id="@+id/edCardname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/authority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issued Authority" />
+
+    <EditText
+        android:id="@+id/edauthority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cardno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cardnumber" />
+
+    <EditText
+        android:id="@+id/edcardno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     
+    <TextView
+        android:id="@+id/carddetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CardType" />
+
+    <EditText
+        android:id="@+id/edcarddetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/cardpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CardPin" />
+
+    <EditText
+        android:id="@+id/edcardpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/issuedon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IssuedOn" />
+
+    <EditText
+        android:id="@+id/edissuedon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <TextView
+        android:id="@+id/validity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validity" />
+
+    <EditText
+        android:id="@+id/edvalidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+
+    
+
+   </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:visibility="gone"
+   android:id="@+id/otherslayout">
+
+    <TextView
+        android:id="@+id/enterinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Information"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txtselected3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Type : Others"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    
+
+        
+</LinearLayout>
+ 
+
+    <TextView
+        android:id="@+id/emailids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EmailId" />
+
+    <EditText
+        android:id="@+id/edemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/edpswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Phonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phonenumber" />
+
+    <EditText
+        android:id="@+id/edphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   
+     
+    
+   
+
+</LinearLayout>
+
+   <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"/>
+              
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvGenerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert to "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spnrGenerate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/codes" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvGenerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Generate to Convert "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Details" />
+</LinearLayout>
+
+
+</ScrollView>

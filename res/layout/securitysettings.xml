@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ImageButton
+            android:id="@+id/ibHome"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/homeicon" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/applogo" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Security"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ImageButton
+            android:id="@+id/ibMenu"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/appmenu" />
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal" />
+ 
+ <TextView
+    android:id="@+id/tvSecQuest"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Security Question:"
+    android:textSize="20dp" />
+ 
+ 
+  <Spinner
+        android:id="@+id/spnrSecQuest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:hint="Select a Security Question"
+        android:entries="@array/SecretQuestion"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="   Answer  "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etxAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal" />
+
+<EditText
+            android:id="@+id/etxUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20dp" 
+            android:hint="Enter Username"/>
+
+<EditText
+            android:id="@+id/etxnewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20dp" 
+            android:hint="Enter New Password to view details"/>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+        
+       
+    <EditText
+        android:id="@+id/repswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Re_Enter Password"
+        android:inputType="textPassword"
+        android:textSize="20dp">
+        <requestFocus />
+    </EditText>
+
+    
+   
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="15dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal" />
+<ImageButton
+    android:id="@+id/ibUpdateDetails"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/appupdate" 
+    android:layout_gravity="center"/>
+
+</LinearLayout>
